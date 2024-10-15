@@ -1,0 +1,46 @@
+.student-test-result .result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.student-test-result .test-name {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.student-test-result .score-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-test-result .score, 
+.student-test-result .max-score {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.student-test-result .score span, 
+.student-test-result .max-score span {
+    font-weight: bold;
+    color: #4caf50; /* Green color for scores */
+}
+
+.student-test-result .loading {
+    text-align: center;
+    font-size: 1.5em;
+    color: #888;
+}
+
+.student-test-result .error {
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}

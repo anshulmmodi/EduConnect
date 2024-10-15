@@ -1,0 +1,109 @@
+/* Main container styling */
+.test-list div {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    
+}
+
+/* Create Test button */
+.test-list li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.test-list .create-test {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.test-list li:hover {
+    background-color: #f4f4f4;
+}
+
+/* Heading styling */
+.test-list h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-top: 100px;
+    color: var(--light-button);
+    border-bottom: 2px solid var(--dark-button);
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.test-list p {
+    color: red;
+}
+
+/* List styling */
+.test-list ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.test-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link for test title */
+.test-list li a:first-child {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    flex-grow: 1;
+    transition: color 0.3s ease;
+}
+
+
+/* Buttons styling (Delete, Edit, View Results) */
+.test-list button, li a {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Specific styles for each button */
+.test-list button {
+    background-color: #e74c3c;
+    height:40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.test-list button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.test-list li a:last-child, li a:nth-child(3) {
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+}
+
+.test-list li a:last-child:hover, li a:nth-child(3):hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}

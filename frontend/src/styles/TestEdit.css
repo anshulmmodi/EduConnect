@@ -1,0 +1,95 @@
+/* Main container for the form */
+.test-edit {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.test-edit h1 {
+    text-align: center;
+    color: var(--light-button);
+    border-bottom: 2px solid var(--dark-button);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+.test-edit label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Form input fields */
+.test-edit input[type="text"],
+.test-edit input[type="number"],
+.test-edit select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Checkbox labels */
+.test-edit input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Section heading for questions */
+.test-edit h2 {
+    margin-top: 30px;
+    color: var(--light-button);
+    border-bottom: 1px solid var(--dark-button);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* Question container */
+.test-edit .question-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Option input fields */
+.test-edit .option-input {
+    width: 80%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Buttons */
+.test-edit button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.test-edit button:hover {
+    background-color: #45a049;
+}
+
+.test-edit button[type="button"] {
+    background-color: #2196f3;
+    margin-right: 10px;
+}
+
+.test-edit button[type="button"]:hover {
+    background-color: #1e88e5;
+}

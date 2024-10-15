@@ -1,0 +1,138 @@
+/* Main container */
+.create-assignment {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form container (centered box) */
+.create-assignment-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styles (centered inside the box) */
+.create-assignment-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    width: 100%; /* Full width for the underline */
+}
+
+/* Form layout (vertical alignment of fields) */
+.create-assignment-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels */
+.create-assignment-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Input fields, text areas, and select dropdown */
+.create-assignment-container input,
+.create-assignment-container textarea,
+.create-assignment-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.create-assignment-container input:focus,
+.create-assignment-container textarea:focus,
+.create-assignment-container select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button (Create Assignment) */
+.create-assignment-container button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+    margin-top: 20px;
+}
+
+.create-assignment-container button:hover {
+    background-color: #1f2937;
+}
+
+/* Back button (optional) */
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #777;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .create-assignment-container {
+        max-width: 90%;
+    }
+
+    .create-assignment-container h2 {
+        font-size: 22px;
+    }
+
+    .create-assignment-container button, .back-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-assignment-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .create-assignment-container h2 {
+        font-size: 20px;
+    }
+
+    .create-assignment-container button, .back-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

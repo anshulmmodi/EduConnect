@@ -1,0 +1,190 @@
+/* Overall page layout */
+.student {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    min-height: 100vh;
+}
+
+/* Title styling */
+.student .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #2c3e50; /* Darker text color */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input container with single box style */
+.student .input-container {
+    display: flex;
+    align-items: center; /* Vertically center input and button */
+    margin-bottom: 1rem; /* Space below the input and button */
+    max-width: 600px; /* Control max width */
+    margin: 0 auto; /* Center horizontally */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden; /* Hide overflow */
+    background-color: #ffffff; /* Background for input-container */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Input field inside the container */
+.student input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0; /* Remove border-radius for a seamless look */
+    flex: 1; /* Allow input to grow and take available space */
+    height: 1.6rem; /* Match height with button */
+    min-width: 0; /* Prevent input from growing too wide */
+    background-color: #ffffff; /* Background for input field */
+    outline: none;
+    font-size: large;
+}
+
+/* Join button inside the container */
+.student button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0; 
+    background-color: var(--light-button);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 2.6rem; /* Match the height of the input */
+    min-width: 70px; /* Ensure the button has a minimum width */
+    display: flex;
+    align-items: center; /* Center button text vertically */
+    justify-content: center; /* Center button text horizontally */
+}
+
+/* Button hover effect */
+.student button:hover {
+    background-color: var(--dark-button);
+}
+
+/* Classrooms grid container with responsive 4 boxes per row */
+.student ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+    gap: 20px; /* Space between boxes */
+    margin-top: 30px;
+    padding: 0;
+    list-style: none; 
+    background-color: #f0f4f8;
+}
+
+/* Adjust the grid for smaller screens */
+@media (max-width: 1200px) {
+    .student ul {
+        grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .student ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .student ul {
+        grid-template-columns: 1fr; /* 1 box per row */
+    }
+
+    /* Adjust the input-container for smaller screens */
+    .student .input-container {
+        flex-direction: column; /* Stack input and button vertically */
+        border-radius: 4px; /* Rounded corners for mobile view */
+    }
+
+    .student input[type="text"] {
+        margin-bottom: 10px; /* Add space below the input */
+        width: 100%; /* Full width */
+    }
+
+    .student button {
+        width: 100%; /* Full width */
+        border-top: 1px solid #ccc; /* Border above button */
+    }
+}
+
+/* Individual classroom card */
+.student li {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Stick date to bottom */
+    height: 200px; /* Set a specific height for consistency */
+    position: relative; /* Ensure that absolutely positioned elements are relative to this */
+}
+
+.student li:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Partition at the top with dynamic background color */
+.student .classroom-partition {
+    padding: 10px;
+    background-color: #3498db; /* Default blue background */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    color: white; /* White text color */
+    text-align: center;
+}
+
+/* Classroom title within the partition */
+.student h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white; /* White title */
+    font-weight: bold;
+}
+
+/* Classroom description */
+.student p {
+    margin: 5px 10px;
+    color: #6f7b7b; /* Lighter text color */
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Date styling, stick to bottom */
+.student .date {
+    font-size: 0.9rem;
+    color: #95a5a6; /* Light gray color for date */
+    margin-bottom: 10px; /* Add some margin */
+}
+
+/* Center alignment for the "No classrooms" message */
+.student .no-classrooms {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+/* Remove underline for classroom links */
+.student ul li a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Keep the original text color */
+}
+
+.student .icon-right-bottom {
+    bottom: 10px; /* Adjust distance from the bottom */
+    right: 10px; /* Adjust distance from the right */
+    position: absolute; /* Position absolutely within the container */
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.student .classroom-img {
+    height: 154px;
+    width: 100%; /* Full width */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

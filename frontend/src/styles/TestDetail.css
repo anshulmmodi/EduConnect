@@ -1,0 +1,85 @@
+/* Main container for the test details */
+.test-detail {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Heading for Test Details page */
+.test-detail h1 {
+    font-size: 2.5rem;
+    color: var(--light-button);
+    border-bottom: 2px solid var(--dark-button);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Test title and time limit styling */
+.test-detail h2 {
+    font-size: 2rem;
+    color: #2a7ae4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.test-detail h3 {
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Questions section */
+.test-detail h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* List of questions */
+.test-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.test-detail li {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Question text */
+.test-detail li p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Options for the questions */
+.test-detail li ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.test-detail li ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Correct Answer */
+.test-detail li p:last-of-type {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Points styling */
+.test-detail li p:nth-last-of-type(2) {
+    font-style: italic;
+    color: #555;
+}

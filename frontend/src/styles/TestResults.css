@@ -1,0 +1,61 @@
+/* Main container */
+.test-results {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+.test-results h1 {
+    text-align: center;
+    color: var(--light-button);
+    border-bottom: 2px solid var(--dark-button);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Results list styling */
+.test-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.test-results li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Student and score details */
+.test-results p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Label for student and score */
+.test-results p strong {
+    font-weight: bold;
+    color: #2a7ae4;
+}
+
+/* Highlight score */
+.test-results .score {
+    font-size: 1.2rem;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Styling for the no results message */
+.test-results p {
+    font-size: 1.2rem;
+    color: #ff0000;
+    text-align: center;
+}

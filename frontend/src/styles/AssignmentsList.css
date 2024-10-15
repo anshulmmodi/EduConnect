@@ -1,0 +1,98 @@
+/* Back to Teachers button */
+.back-to-teachers-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px 15px;
+    background-color: #777;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-to-teachers-button:hover {
+    background-color: #555;
+}
+
+/* Container for Assignments */
+.assignments-container {
+    max-width: 800px;
+    margin: 50px auto 0 auto; /* Ensure spacing below the back button */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Assignments Header */
+.assignments-header {
+    font-size: 40px;
+    text-align: center;
+    color: var(--light-button);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--light-button);
+}
+
+/* Create Assignment Button */
+.create-assignment-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: var(--light-button);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.create-assignment-button:hover {
+    background-color: var(--dark-button);
+}
+
+/* Assignments List */
+.assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+/* Assignment Item - Card Style */
+.assignment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.assignment-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Assignment Link */
+.assignment-link {
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.assignment-link:hover {
+    color: #d56d17;
+}
+
+.no-assignments-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}

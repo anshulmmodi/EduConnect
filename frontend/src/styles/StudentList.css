@@ -1,0 +1,70 @@
+/* Main container for the student list */
+.student-list {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Classroom heading */
+.student-list h1:first-of-type {
+    font-size: 2rem;
+    color: #2a7ae4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Student list heading */
+.student-list h1 {
+    font-size: 1.8rem;
+    color: var(--light-button);
+    border-bottom: var(--dark-button);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* No students message */
+.student-list p {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+}
+
+/* List of students */
+.student-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student-list li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+/* Student name */
+.student-list li span.student-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Student email */
+.student-list li span.student-email {
+    color: #666;
+}
+
+/* Loader styling */
+.student-list .loading {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+}

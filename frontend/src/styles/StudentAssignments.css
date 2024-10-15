@@ -1,0 +1,100 @@
+/* Main container */
+.student-assignments {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading */
+.student-assignments h1 {
+    color: var(--light-button);
+    border-bottom: 2px solid var(--dark-button);
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 800px;
+    text-align: center;
+}
+
+/* Assignments list */
+.student-assignments ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Assignment items */
+.student-assignments li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for assignment items */
+.student-assignments li:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Assignment title link */
+.student-assignments a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+.student-assignments .back-to-teachers-button{
+    color: white;
+}
+.student-assignments a h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Classroom info */
+.student-assignments p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* No assignments message */
+.student-assignments p.no-assignments {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .student-assignments {
+        padding: 15px;
+    }
+
+    .student-assignments h1 {
+        font-size: 24px;
+    }
+
+    .student-assignments li {
+        padding: 15px;
+    }
+
+    .student-assignments a h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-assignments h1 {
+        font-size: 20px;
+    }
+
+    .student-assignments li {
+        padding: 10px;
+    }
+
+    .student-assignments a h2 {
+        font-size: 18px;
+    }
+}

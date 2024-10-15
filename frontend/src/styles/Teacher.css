@@ -1,0 +1,109 @@
+/* Overall page layout */
+.teacher {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    min-height: 100vh;
+}
+
+/* Title styling */
+.teacher .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #2c3e50; /* Darker text color */
+    font-weight: bold;
+}
+
+/* Classrooms grid container with 4 boxes per row */
+.teacher ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+    gap: 20px; /* Space between boxes */
+    margin-top: 30px;
+    padding: 0;
+    list-style: none; /* Remove list bullets */
+}
+
+/* Individual classroom card */
+.teacher li {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Stick date to bottom */
+    height: 200px; /* Set a specific height for consistency */
+}
+
+.teacher li:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Partition at the top with dynamic background color */
+.teacher .classroom-partition {
+    padding: 10px;
+    background-color: #3498db; /* Default blue background */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    color: white; /* White text color */
+    text-align: center;
+}
+
+/* Classroom title within the partition */
+.teacher h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white; /* White title */
+    font-weight: bold;
+}
+
+/* Classroom description */
+.teacher p {
+    margin: 5px 10px;
+    color: #6f7b7b; /* Lighter text color */
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Date styling, stick to bottom */
+.teacher .date {
+    font-size: 0.9rem;
+    color: #95a5a6; /* Light gray color for date */
+    margin-bottom: 10px; /* Add some margin */
+}
+
+/* Center alignment for the "No classrooms" message */
+.teacher .no-classrooms {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+/* Remove underline for classroom links */
+.teacher ul li a {
+    text-decoration: none; /* No underline */
+    color: inherit; /* Keep the original text color */
+}
+
+.teacher .icon-right-bottom {
+    bottom: 10px; /* Adjust distance from the bottom */
+    right: 10px; /* Adjust distance from the right */
+    position: absolute; /* Position absolutely within the container */
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.teacher .your-classrooms{
+    font-size:33px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color: #2c3e50
+}
+.teacher .classroom-img{
+    height: 154px;
+    width: 355px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

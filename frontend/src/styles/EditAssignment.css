@@ -1,0 +1,144 @@
+/* Main container */
+.edit-assignment {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form container (centered box) */
+.edit-assignment-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styles (centered inside the box) */
+.edit-assignment-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    width: 100%; /* Full width for the underline */
+}
+
+/* Form layout (vertical alignment of fields) */
+.edit-assignment-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels */
+.edit-assignment-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Input fields, text areas, and select dropdown */
+.edit-assignment-container input,
+.edit-assignment-container textarea,
+.edit-assignment-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.edit-assignment-container input:focus,
+.edit-assignment-container textarea:focus,
+.edit-assignment-container select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button (Update Assignment) */
+.edit-assignment-container button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+    margin-top: 20px;
+}
+
+.edit-assignment-container button:hover {
+    background-color: #1f2937;
+}
+
+/* File list items and remove button */
+.edit-assignment-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.edit-assignment-container li {
+    margin-bottom: 10px;
+}
+
+.edit-assignment-container button[type="button"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.edit-assignment-container button[type="button"]:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .edit-assignment-container {
+        max-width: 90%;
+    }
+
+    .edit-assignment-container h1 {
+        font-size: 22px;
+    }
+
+    .edit-assignment-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .edit-assignment-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .edit-assignment-container h1 {
+        font-size: 20px;
+    }
+
+    .edit-assignment-container button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

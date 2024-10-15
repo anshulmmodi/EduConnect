@@ -1,0 +1,64 @@
+.student-tests {
+    display: flex;
+    justify-content: center;  /* Center the container horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: max-content;  /* Ensure div takes the necessary height */
+}
+
+.student-tests-container {
+    display: flex;
+    flex-direction: column;   /* Stack the heading and list vertically */
+    align-items: center;      /* Center align content */
+    width: 100%;
+    max-width: 600px;         /* Set a maximum width for better readability */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.student-tests-container h1 {
+    margin-bottom: 20px;      /* Space between heading and list */
+    font-size: 2rem;
+    color: var(--light-button);
+    text-align: center;
+    border-bottom: 2px solid var(--dark-button);
+    max-width: 300px;
+}
+
+.student-tests-container ul {
+    list-style-type: none;    /* Remove default bullet points */
+    padding: 0;
+    width: 50%;              /* Make sure the list takes up full width */
+}
+
+.student-tests-container li {
+    background-color: #4A90E2; /* Light background for list items */
+    border: 1px solid #ccc; 
+    color:#fff ;  /* Light border around each item */
+    border-radius: 8px;
+    padding: 0px;
+    margin-bottom: 10px;      /* Space between each list item */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.student-tests-container li:hover {
+    background-color: #0e5bb4; /* Slightly darker background on hover */
+}
+
+.student-tests-container a {
+    display: block;
+    text-decoration: none;
+    color: inherit;  /* Inherit color from parent (li) */
+    width: 90%;     /* Make the anchor take full width */
+    height: 100%;    /* Ensure anchor covers full height of li */
+    font-weight: bold;
+    text-align: center;
+}
+
+.student-tests-container a:hover {
+    color: inherit;  /* Prevent color change on hover */
+}

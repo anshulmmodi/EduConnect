@@ -1,0 +1,141 @@
+.student-classroom {
+    display: flex;                /* Use flexbox for centering */
+    justify-content: center;      /* Center content horizontally */
+    padding: 20px;               /* Add padding around the main div */
+    background-color: #f9f9f9;   /* Background color for the main div */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.student-classroom .back-to-teachers-button{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px 15px;
+    background-color: #777;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.student-classroom .back-to-teachers-button:hover{
+    text-decoration: none;
+    background-color: #555;
+}
+
+.student-classroom-container {
+    max-width: 800px;            /* Max width for the content */
+    width: 70%;                 /* Full width within the container */
+    margin-top: 20px;            /* Space above the container */
+}
+
+.student-classroom h2 {
+    font-size: 24px;             /* Font size for the classroom name */
+    color: var(--light-button);                 /* Color for the classroom name */
+}
+
+.student-classroom p {
+    font-size: 16px;             /* Font size for paragraph text */
+    color: #666;                 /* Color for paragraph text */
+}
+
+.student-classroom h3 {
+    font-size: 20px;             /* Font size for announcements heading */
+    color: #2c3e50;              /* Color for announcements heading */
+    margin-top: 30px;            /* Space above announcements heading */
+}
+
+.student-classroom textarea {
+    width: 100%;                 /* Full width for textarea */
+    height: 100px;               /* Fixed height for textarea */
+    padding: 10px;               /* Padding inside the textarea */
+    border: 1px solid #ccc;      /* Light gray border */
+    border-radius: 4px;          /* Rounded corners */
+    margin-bottom: 10px;         /* Space below textarea */
+    resize: none;                /* Disable resizing */
+}
+
+.student-classroom input[type="file"] {
+    margin-bottom: 10px;         /* Space below file input */
+}
+
+.student-classroom button {
+    padding: 10px 15px;          /* Padding for buttons */
+    background-color: #3498db;   /* Blue background for buttons */
+    color: white;                /* White text color */
+    border: none;                /* Remove border */
+    border-radius: 4px;          /* Rounded corners */
+    cursor: pointer;             /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.student-classroom button:hover {
+    background-color: #2980b9;   /* Darker blue on hover */
+}
+
+.student-classroom ul {
+    list-style: none;            /* Remove default list style */
+    padding: 0;                  /* Remove default padding */
+}
+
+.student-classroom li {
+    padding: 10px;               /* Padding for announcement items */
+    margin-bottom: 10px;         /* Space below each announcement */
+    border: 1px solid #ddd;      /* Light gray border */
+    border-radius: 4px;          /* Rounded corners */
+    background-color: #fff;      /* White background for items */
+}
+
+.student-classroom li p {
+    margin: 5px 0;               /* Margin around paragraph text in items */
+}
+
+.student-classroom li button {
+    background-color: #e74c3c;   /* Red color for delete button */
+    margin-top: 10px;            /* Space above delete button */
+}
+
+.student-classroom li button:hover {
+    background-color: #c0392b;   /* Darker red on hover */
+}
+
+.student-classroom div {
+    margin-top: 10px;            /* Space above additional divs */
+}
+
+.student-classroom  a {
+    display: inline-block;        /* Inline block for links */
+    margin-top: 10px;            /* Space above links */
+    color: #3498db;              /* Link color */
+    text-decoration: none;        /* Remove underline from links */
+}
+
+.student-classroom a:hover {
+    text-decoration: underline;   /* Underline on hover */
+}
+.break-line{
+    border-bottom: 2px solid var(--dark-button);
+}
+
+.student-classroom-container .announcement-text{
+    font-size: 25px;
+    font-weight: 700;
+}
+.student-classroom-container .view-students{
+    background-color: rgb(212, 98, 17);
+    color: white;
+}
+.student-classroom-container .view-students a{
+    margin-top: 5px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.student-classroom-container .view-students a:hover {
+    text-decoration: none;
+    background-color: rgb(211, 92, 6);
+}
+.student-classroom-container .view-students:hover{
+    background-color: rgb(211, 92, 6);
+    color: white;
+}
