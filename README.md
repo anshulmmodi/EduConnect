@@ -45,17 +45,17 @@
 ## Project Structure
 
 EduConnect/ 
-├── .vscode/ # VSCode workspace settings and configurations 
-├── educonnect/ # Django project folder (backend) 
-├── env/ # Virtual environment for Python dependencies 
-├── frontend/ # React frontend application 
-├── myapp/ # Django app containing backend logic 
-├── media/ # Folder storing media files (assignments, announcements, etc.) 
-├── node_modules/ # Node.js dependencies for the frontend
-├── db.sqlite3 # SQLite database file ├── manage.py # Django management script 
-├── package.json # Node.js project metadata and scripts for the frontend 
-├── package-lock.json # Locks the versions of Node.js packages installed 
-└── README.md # Project documentation (this file)
+   ─ .vscode/ # VSCode workspace settings and configurations 
+   ─ educonnect/ # Django project folder (backend) 
+   ─ env/ # Virtual environment for Python dependencies 
+   ─ frontend/ # React frontend application 
+   ─ myapp/ # Django app containing backend logic 
+   ─ media/ # Folder storing media files (assignments, announcements, etc.) 
+   ─ node_modules/ # Node.js dependencies for the frontend
+   ─ db.sqlite3 # SQLite database file ├── manage.py # Django management script 
+   ─ package.json # Node.js project metadata and scripts for the frontend 
+   ─ package-lock.json # Locks the versions of Node.js packages installed 
+   ─ README.md # Project documentation (this file)
 
 
 ## Features Breakdown
